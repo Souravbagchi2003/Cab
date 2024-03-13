@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#about {
+    width: 100%;
+    height: 100%;
+    /* background-color: skyblue; */
+    /* background-color: black; */
+    background-image: url(bg-2.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+#about-heading {
+    width: 100%;
+    height: 200px;
+    /* background-color: red; */
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#circle-3 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffbf00;
+    border-radius: 50%;
+    left: 50%;
+    /* margin: 20px; */
+}
+
+#about-heading h4 {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #c2c2c2;
+}
+
+#about-heading h1 {
+    margin-top: 30px;
+    font-size: 55px;
+    color: white;
+    font-weight: 600;
+    font-family: "ADLaM Display";
+}
+
+#about-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-text {
+    display: flex;
+    width: 390px;
+    height: 400px;
+    flex-direction: column;
+    /* background-color: greenyellow; */
+    border-radius: 10px;
+    padding: 30px 30px 20px 30px;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+
+    background: rgba(31, 31, 31, 0.3);
+    /* box-shadow: 0 8px 32px 0 rgba(218, 218, 230, 0.37); */
+    box-shadow: 0 8px 32px 0 rgba(218, 218, 230, 0.37),
+        inset -2px -2px 4px 0 rgba(255, 255, 255, 0.447);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.about-icon {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 50%;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-text h2 {
+    margin: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+.about-text p {
+    color: white;
+}
+
+.about-text a {
+    text-decoration: none;
+    /* margin-top: ; */
+    color: #ffbf00;
+}
+
+.about-text a:hover {
+    color: white;
+}
+
+.about-text:hover {
+    transform: rotateZ(-5deg);
+    /* transform: rotate3d(0.5, 0.5, 0, 10deg); */
+
+    background: rgba(186, 255, 184, 0.3)
+}

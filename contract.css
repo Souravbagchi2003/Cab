@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(texture.png);
+    background-color: rgba(0, 0, 0, 0.803);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* here have anime part and his design*/
+#contact-anime {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    opacity: 0.4;
+    /* z-index: -1; */
+    /* background-color: rgb(238, 130, 238); */
+    overflow-x: hidden;
+}
+
+#bg {
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url(city-skiline.png);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    justify-content: center;
+    /* animation: bgmove 20s linear  infinite; */
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4000px;
+    }
+}
+
+#truck1 {
+    position: absolute;
+    background: url(truck-1.png);
+    background-size: cover;
+    object-fit: cover;
+    width: 110px;
+    height: 45px;
+    bottom: 0px;
+    right: 0px;
+    animation: car1 4s linear infinite;
+}
+
+#truck2 {
+    position: absolute;
+    background: url(truck-2.png);
+    background-size: cover;
+    object-fit: cover;
+    width: 100px;
+    height: 35px;
+    bottom: 0px;
+    right: 120px;
+    animation: car2 2s linear infinite;
+}
+
+#truck3 {
+    position: absolute;
+    background: url(truck-3.png);
+    background-size: cover;
+    object-fit: cover;
+    bottom: 0px;
+    right: 300px;
+    width: 100px;
+    height: 56px;
+    animation: car3 5s linear  infinite;
+}
+
+@keyframes car1 {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes car2 {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes car3 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* here have contact details part*/
+
+#contact-2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: 400px; */
+    /* background-color: green; */
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.common {
+    width: 200px;
+    /* background-color: yellow; */
+}
+
+.common li {
+    list-style: none;
+    margin: 10px 10px 15px 0px;
+
+}
+
+.common h2 {
+    margin-bottom: 15px;
+}
+
+.common a {
+    text-decoration: none;
+    /* color: black; */
+    color: white;
+}
+
+.common li:hover {
+    color: #ffbf00;
+}
+
+.common h2:hover {
+    color: #ffbf00;
+}
+
+.common a:hover {
+    color: #ffbf00;
+}
+
+#contact-3{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 620px;
+    /* background-color: #424242; */
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-3 img{
+    width: 100px;
+    height: 50px;
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: url(texture.png);
+    background-color: rgba(0, 0, 0, 0.803);
+}
+
+#bg {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    background: url(city-skiline.png);
+    background-size: cover;
+    /* animation: bgmove 12s linear  infinite; */
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4000px;
+    }
+}
+
+#truck1 {
+    position: absolute;
+    background: url(truck-1.png);
+    background-size: cover;
+    object-fit: cover;
+    width: 110px;
+    height: 45px;
+    bottom: 0px;
+    right: 0px;
+    animation: car1 4s linear infinite;
+}
+
+#truck2 {
+    position: absolute;
+    background: url(truck-2.png);
+    background-size: cover;
+    object-fit: cover;
+    width: 100px;
+    height: 35px;
+    bottom: 0px;
+    right: 120px;
+    animation: car2 2s linear infinite;
+}
+
+#truck3 {
+    position: absolute;
+    background: url(truck-3.png);
+    background-size: cover;
+    object-fit: cover;
+    bottom: 0px;
+    right: 300px;
+    width: 100px;
+    height: 56px;
+    animation: car3 5s linear reverse infinite;
+}
+
+
+@keyframes car1 {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+@keyframes car2 {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes car3 {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
